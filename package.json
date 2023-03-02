@@ -1,0 +1,24 @@
+{
+  "name": "apptaskspostgres",
+  "version": "1.0.0",
+  "description": "- Iniciar aplicação node;\r - Gerenciador de pacotes (NPM);\r - Webframework (Express);\r -",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pauloandreola/appTasksPostgres.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pauloandreola/appTasksPostgres/issues"
+  },
+  "homepage": "https://github.com/pauloandreola/appTasksPostgres#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

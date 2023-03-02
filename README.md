@@ -3,8 +3,10 @@
 # Primeiros passos
 - Iniciar aplicação node;
 - Gerenciador de pacotes (NPM);
+  - npm init -y
 - Webframework (Express);
-- 
+  - npm i express
+  
 
 # Requisitos:
 
