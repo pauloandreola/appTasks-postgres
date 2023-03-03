@@ -3,7 +3,7 @@
 # Requisitos:
 - node
 - yarn/npm/pnpm
-- docker
+- docker com Postgres e/ou MySQL
 
 # Passos iniciais
 
