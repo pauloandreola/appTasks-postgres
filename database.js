@@ -2,7 +2,7 @@
 import pg from 'pg';
 const { Client } = pg;
 
-export async function database() {
+export async function database(query) {
   const client = new Client({
     host: 'localhost',
     port: 5432,
@@ -12,7 +12,7 @@ export async function database() {
   })
   await client.connect();
 
-  const res = await client.query('SELECT $1::text as message', ['Hello world!']);
-  console.log(res.rows[0].message); // Hello world!
+  const res = await client.query(query);
+  console.log(res.rows[0].message);
   await client.end();
 }
