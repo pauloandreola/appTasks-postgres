@@ -100,6 +100,7 @@
  - https://www.fastify.io/docs/latest/Guides/Getting-Started/ - Documentação oficial para iniciar instalação do fastify
  - https://www.typescriptlang.org/ - Documentação oficial do typescript
  - https://www.typescriptlang.org/docs/ - 
- - https://www.npmjs.com/package/tsx - Documentação de biblioteca que roda 
+ - https://www.npmjs.com/package/tsx - Documentação de biblioteca que roda módulo tsx 
+ - https://www.npmjs.com/package/dotenv - 
 
  
