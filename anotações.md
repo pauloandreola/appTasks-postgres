@@ -73,6 +73,14 @@
 - Manter a importação do database no topo do server.ts
 - Tirar a configuração do CommonJS
 - Inicialmente comentar o database para utilizar o "core da feature" que estamos implementando
+- Instalar o Typescript como dependência de desenvolvimento
+- Rodar o comando npx tsc --init. Vai gerar um arquivo na raiz do projeto chamado tsconfig.json
+- Instalar as dependências do node para typescript com o comando npm i @types/node -D.
+- Instalar como dependência o módulo tsx (typescript execute) com o comando npm i tsx -D
+- Cria o script "dev": "tsx watch src/server.ts" para rodar com o comando npm run dev
+- Para testar uma requisição http, inserir em qualquer browser o link http://[::1]:3000 com o npm run dev sendo executado. Deve aparecer {"hello":"world"}.
+- Iniciar a criar os endpoint/rotas.
+
 
 
 # Documentação:
@@ -90,4 +98,8 @@
  - https://node-postgres.com/ - Para fazer query no banco de dados diretamente do NodeJs
  - https://www.fastify.io/ - Para instalar fastify no lugar do express
  - https://www.fastify.io/docs/latest/Guides/Getting-Started/ - Documentação oficial para iniciar instalação do fastify
+ - https://www.typescriptlang.org/ - Documentação oficial do typescript
+ - https://www.typescriptlang.org/docs/ - 
+ - https://www.npmjs.com/package/tsx - Documentação de biblioteca que roda 
+
  
