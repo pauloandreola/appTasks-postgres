@@ -80,6 +80,9 @@
 - Cria o script "dev": "tsx watch src/server.ts" para rodar com o comando npm run dev
 - Para testar uma requisição http, inserir em qualquer browser o link http://[::1]:3000 com o npm run dev sendo executado. Deve aparecer {"hello":"world"}.
 - Iniciar a criar os endpoint/rotas.
+- Pelas boas práticas do TDD iniciar o caso de uso através da criação dos testes
+- Instalar a biblioteca do Vitest npm install -D vitest (mesma funcionalidades do Jest porém mais rápido). Obs. Já existe um beta de teste do Node, ou seja, nativo.
+- Começamos os testes copiando o conteúdo da pasta suites.test.ts do link https://stackblitz.com/edit/vitest-dev-vitest-txlgbq?file=test%2Fsuite.test.ts&initialPath=__vitest__
 
 
 
@@ -102,5 +105,9 @@
  - https://www.typescriptlang.org/docs/ - 
  - https://www.npmjs.com/package/tsx - Documentação de biblioteca que roda módulo tsx 
  - https://www.npmjs.com/package/dotenv - 
-
+ - https://www.npmjs.com/package/vitest - Documentação do NPM
+ - https://vitest.dev/ - Documentação oficial
+ - 
+ - 
+ - 
  
