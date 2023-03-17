@@ -7,8 +7,9 @@
 
 # Passos iniciais
 
-[X] Iniciar aplicação node (yarn/npm/pnpm init -y) 
-[X] Webframework (Express)
+[X] Iniciar aplicação node (yarn/npm/pnpm init -y)
+[ ] Refatorar ajustar código para Typescript
+[ ] Webframework (Express). Refatorar mudando para (Fastify)
 [X] Banco de dados (Postgres ou MySQL) rodando em um container Docker. Queries SQL puras.
 
 # Features e requisitos
