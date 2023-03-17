@@ -1,21 +1,15 @@
 // import { database } from './database.js';
 import Fastify from 'fastify';
 import dotenv from "dotenv"
+import { tasksRoutes } from './routes';
 
 dotenv.config()
 
-const app = Fastify({
+export const app = Fastify({
   logger: true
 })
 
-app.get('/', async (request, reply) => {
-  return { hello: 'world' }
-})
-
-// app.post('/tasks', (req, res) => {
-//   const task = req.body;
-//   res.send('POST request to the homepage');
-// })
+app.register(tasksRoutes)
 
 const port = 3000;
 
