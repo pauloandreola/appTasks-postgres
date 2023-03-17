@@ -1,17 +1,18 @@
-import { Task } from "vitest";
+import { randomUUID } from "crypto";
+import { Task } from "../../entities/Task";
 
 export class CreateTaskUseCase {
   constructor(private tasksRepository: TasksRepository) {}
 
-  async execute({ title, description }: CreateTaskDTO): Promise<Task> {
+  async execute({ title, description, effort }: CreateTaskDTO): Promise<Task> {
     const task = new Task();
 
     Object.assign(task, {
       title,
       description,
-      done: false,
-      created_at: new Date(),
-      updated_at: new Date(),
+      effort,
+      createdAt: new Date(),
+      completedAt: new Date(),
     });
 
     await this.tasksRepository.create(task);
