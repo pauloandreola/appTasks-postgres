@@ -1,19 +1,28 @@
-import express from 'express';
-import { database } from './database.js';
+// import { database } from './database.js';
+import Fastify from 'fastify'
 
-const app = express();
-const port = 3000;
-
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
-
-app.post('/tasks', (req, res) => {
-  const task = req.body;
-  database();
-  res.send('POST request to the homepage');
+const app = Fastify({
+  logger: true
 })
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-});
+app.get('/', async (request, reply) => {
+  return { hello: 'world' }
+})
+
+// app.post('/tasks', (req, res) => {
+//   const task = req.body;
+//   res.send('POST request to the homepage');
+// })
+
+const port = 3000;
+
+const start = async () => {
+  try {
+    const response = await app.listen({ port: 3000 })
+    console.log(response);
+  } catch (err) {
+    app.log.error(err)
+    process.exit(1)
+  }
+}
+start()
