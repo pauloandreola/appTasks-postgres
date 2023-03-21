@@ -8,10 +8,13 @@ describe('Create Tasks Use Case', () => {
     const useCase = new CreateTaskUseCase(repository)
       const task = await useCase.execute({
         title: 'Task01',
-        description: 'description01',
+        description: 'Description01',
         effort: 1
       })
 
       expect(task).toHaveProperty('id');
+      expect(task.title).toEqual('Task01');
+      expect(task.description).toEqual('Description01');
+      expect(task.effort).toEqual(1);
   });
 });
