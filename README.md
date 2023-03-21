@@ -17,15 +17,18 @@
 ## CRUD de tarefas
 
 - Campos de tarefas: Nome, descrição, quantidade de horas, data de conclusão
-[] - Deverá ser possível realizar a criação de uma task
-  - Será uma rota privada
-[] -  Deverá ser possível realizar a atualização de uma task
+[X] - Deverá ser possível realizar a criação de uma task
+  Notas: Criamos a tabela de usuário com SQL puro.
+[]  - Será uma rota privada
+[X] -  Deverá ser possível realizar a atualização de uma task
 []  - Será uma rota privada, somente o usuário que criou a task poderá atualiza-la
-[] -  Deverá ser possível realizar a deleção de uma task
+[X] -  Deverá ser possível completar uma task
+[]  - Será uma rota privada, somente o usuário que criou a task poderá atualiza-la
+[X] -  Deverá ser possível realizar a deletar uma task
 []  - Será uma rota privada, somente o usuário que criou a task poderá deleta-la 
-[] -  Deverá ser possível listar as tasks
+[X] -  Deverá ser possível listar as tasks
 []  - Será uma rota privada,o usuário somente verá as tasks que ele mesmo criou. Deverá ser possível ordenar e filtrar as tasks com base nos campos "created_at" e "done"
-[] -  Deverá ser possível visualizar uma task  
+[X] -  Deverá ser possível visualizar uma task  
 []  - Será uma rota privada, o usuário somente verá a task que ele mesmo criou. 
 
 ## Cadastro de usuários
@@ -44,10 +47,12 @@
 [] - Deverá ser possível realizar login. Será uma rota pública que receberá e-mail e senha
 [] - Um usuário que não for cadastrado não deverá conseguir logar na aplicação
 
+[] Ligar pontas:  controllers e banco de dados
+
 ## Melhorias
 
 - Desenhar a solução, utilizando por exemplo fluxogramas e wireframes
 - Criar modelagem do banco de dados
-- Webframework (Fastfy)
+- Webframework (Fastify)
 - Documentação com OpenAi 3.0
 - Configurar ESLint, Prettier, Ts-prune
