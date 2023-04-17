@@ -6,7 +6,7 @@ export async function tasksRoutes (fastify: FastifyInstance) {
   })
 
   fastify.post('/', async (request, reply) => {
-    // return { hello: 'world' }
+    return request.body
   })
 
 }
