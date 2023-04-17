@@ -11,7 +11,7 @@ export const app = Fastify({
 
 app.register(tasksRoutes)
 
-const port = 3000;
+const port = process.env.PORT as unknown as number || process.env.LOCAL_PORT as unknown as number;
 
 const start = async () => {
   try {
