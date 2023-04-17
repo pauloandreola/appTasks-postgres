@@ -1,12 +1,12 @@
 import { FastifyInstance } from "fastify"
 
 export async function tasksRoutes (fastify: FastifyInstance) {
-  fastify.get('/', async (request, reply) => {
+  fastify.get('/', async (req, reply) => {
     return { hello: 'world' }
   })
 
-  fastify.post('/', async (request, reply) => {
-    return request.body
+  fastify.post('/', async (req, reply) => {
+    return req.body
   })
 
 }
