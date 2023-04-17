@@ -2,7 +2,7 @@
 import pg from 'pg';
 const { Client } = pg;
 
-export async function database(query) {
+export async function database(query: string) {
   const client = new Client({
     host: 'localhost',
     port: 5432,
