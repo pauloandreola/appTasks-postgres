@@ -3,8 +3,6 @@ import { Task } from "../../entities/Task";
 import { TaskInput, TasksRepository } from "./interface";
 
 export class InMemoryTasksRepository implements TasksRepository {
-
-
   private tasks: Task[] =  [];
 
   async create(task: TaskInput): Promise<Task> {
