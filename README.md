@@ -47,7 +47,7 @@
 [] - Deverá ser possível realizar login. Será uma rota pública que receberá e-mail e senha
 [] - Um usuário que não for cadastrado não deverá conseguir logar na aplicação
 
-[] Ligar pontas:  controllers e banco de dados
+[] - Ligar pontas:  controllers e banco de dados
 
 ## Melhorias
 
