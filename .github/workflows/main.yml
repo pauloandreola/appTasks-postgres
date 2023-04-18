@@ -1,4 +1,4 @@
-name: GitHub Actions da Prova Técnica Trimestre 4
+name: GitHub Actions Apptasks-Postgres 
 
 on:
   push:
@@ -13,4 +13,5 @@ jobs:
         with:
           node-version: 16
       - run: npm ci
-      - run: npm run test      
+      - run: npm run test
+      - run: npm run dev     

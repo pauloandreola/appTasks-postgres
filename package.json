@@ -7,7 +7,7 @@
   "scripts": {
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "start": "node server.ts",
+    "start": "node src/server.ts",
     "dev": "tsx watch src/server.ts"
   },
   "repository": {
